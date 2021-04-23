@@ -1,0 +1,167 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "\"UnFederalReserve\"",
+    "line": 2,
+    "id": "\"unfederalreserve\"",
+    "tags": [
+      {
+        "name": "@e2e-feature",
+        "line": 1
+      }
+    ],
+    "uri": "supply.feature",
+    "elements": [
+      {
+        "id": "\"unfederalreserve\";configure-metamask",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Configure MetaMask",
+        "tags": [
+          {
+            "name": "@e2e-feature",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on home page",
+            "result": {
+              "status": "passed",
+              "duration": 51913000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I see wallet name \"MetaMask\" in modal",
+            "result": {
+              "status": "passed",
+              "duration": 89000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I see wallet description is \"Connect to your MetaMask Wallet\"",
+            "result": {
+              "status": "passed",
+              "duration": 66000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I unlock my wallet plugin",
+            "result": {
+              "status": "passed",
+              "duration": 1739000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on \"MetaMask\" name",
+            "result": {
+              "status": "passed",
+              "duration": 10224000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I see part of token in header",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "\"unfederalreserve\";supply",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Supply",
+        "tags": [
+          {
+            "name": "@e2e-feature",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click on user supply market",
+            "result": {
+              "status": "passed",
+              "duration": 213000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I see base modal",
+            "result": {
+              "status": "passed",
+              "duration": 95000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I type \"0.1\" in base modal",
+            "result": {
+              "status": "passed",
+              "duration": 220000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I submit a value by click on \"Supply\"",
+            "result": {
+              "status": "passed",
+              "duration": 5161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I see base modal with title \"Confirm Transaction\"",
+            "result": {
+              "status": "passed",
+              "duration": 75000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I confirm transaction",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.task('confirmTransaction')` failed with the following error:\n\n> No node found for selector: [data-testid=\"home__activity-tab\"]\n    at https://ledger-stage.unfederalreservetesting.com/__cypress/runner/cypress_runner.js:140083:19\nFrom previous event:\n    at Context.task (https://ledger-stage.unfederalreservetesting.com/__cypress/runner/cypress_runner.js:140065:15)\nFrom Your Spec Code:\n    at Context.eval (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\integration\\supply.feature:107:6)\n    at Context.resolveAndRunStepDefinition (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\integration\\supply.feature:11019:9)\n    at Context.eval (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\integration\\supply.feature:10362:35)\n    at executeFn (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\support\\index.js:692:22)\n    at Context.eval (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\support\\index.js:705:12)\n\nFrom Node.js Internals:\n  Error: No node found for selector: [data-testid=\"home__activity-tab\"]\n      at Object.assert (C:\\Users\\guest1\\@shoon\\compound\\cucumber-demo\\node_modules\\puppeteer\\lib\\cjs\\puppeteer\\common\\assert.js:26:15)\n      at DOMWorld.click (C:\\Users\\guest1\\@shoon\\compound\\cucumber-demo\\node_modules\\puppeteer\\lib\\cjs\\puppeteer\\common\\DOMWorld.js:277:21)\n      at processTicksAndRejections (internal/process/task_queues.js:93:5)\n      at confirmTransaction (C:\\Users\\guest1\\@shoon\\compound\\cucumber-demo\\cypress\\plugins\\index.js:40:3)\n      at confirmTransaction (C:\\Users\\guest1\\@shoon\\compound\\cucumber-demo\\cypress\\plugins\\index.js:112:14)\n  "
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

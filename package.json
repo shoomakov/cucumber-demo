@@ -1,0 +1,36 @@
+{
+  "name": "cucumber-demo",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cucumber",
+    "cypress"
+  ],
+  "author": "shoomakov",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@cypress/eslint-plugin-dev": "^5.1.0",
+    "cypress": "^7.1.0",
+    "cypress-browser-extension-plugin": "^0.1.0",
+    "cypress-commands": "^1.1.0",
+    "cypress-cucumber-preprocessor": "^4.0.3",
+    "cypress-pipe": "^2.0.0",
+    "eslint": "^7.24.0",
+    "playwright": "^1.10.0",
+    "puppeteer": "^8.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {}
+}

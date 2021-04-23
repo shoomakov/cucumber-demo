@@ -1,0 +1,162 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "\"UnFederalReserve\"",
+    "line": 2,
+    "id": "\"unfederalreserve\"",
+    "tags": [
+      {
+        "name": "@e2e-feature",
+        "line": 1
+      }
+    ],
+    "uri": "borrow.feature",
+    "elements": [
+      {
+        "id": "\"unfederalreserve\";configure-metamask",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Configure MetaMask",
+        "tags": [
+          {
+            "name": "@e2e-feature",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on home page",
+            "result": {
+              "status": "passed",
+              "duration": 33705000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I see wallet name \"MetaMask\" in modal",
+            "result": {
+              "status": "passed",
+              "duration": 156000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I see wallet description is \"Connect to your MetaMask Wallet\"",
+            "result": {
+              "status": "passed",
+              "duration": 113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I unlock my wallet plugin",
+            "result": {
+              "status": "failed",
+              "duration": 1399000000,
+              "error_message": "CypressError: `cy.task('unlockWallet')` failed with the following error:\n\n> Invalid URL: http://localhost:undefined\n\nhttps://on.cypress.io/api/task\n    at https://ledger-stage.unfederalreservetesting.com/__cypress/runner/cypress_runner.js:140083:19\n    at tryCatcher (https://ledger-stage.unfederalreservetesting.com/__cypress/runner/cypress_runner.js:10747:23)\n    at Promise._settlePromiseFromHandler (https://ledger-stage.unfederalreservetesting.com/__cypress/runner/cypress_runner.js:8682:31)\n    at Promise._settlePromise (https://ledger-stage.unfederalreservetesting.com/__cypress/runner/cypress_runner.js:8739:18)\n    at Promise._settlePromise0 (https://ledger-stage.unfederalreservetesting.com/__cypress/runner/cypress_runner.js:8784:10)\n    at Promise._settlePromises (https://ledger-stage.unfederalreservetesting.com/__cypress/runner/cypress_runner.js:8860:18)\n    at _drainQueueStep (https://ledger-stage.unfederalreservetesting.com/__cypress/runner/cypress_runner.js:5454:12)\n    at _drainQueue (https://ledger-stage.unfederalreservetesting.com/__cypress/runner/cypress_runner.js:5447:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://ledger-stage.unfederalreservetesting.com/__cypress/runner/cypress_runner.js:5463:5)\n    at Async.drainQueues (https://ledger-stage.unfederalreservetesting.com/__cypress/runner/cypress_runner.js:5333:14)\nFrom Your Spec Code:\n    at Context.eval (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\integration\\borrow.feature:123:6)\n    at Context.resolveAndRunStepDefinition (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\integration\\borrow.feature:11019:9)\n    at Context.eval (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\integration\\borrow.feature:10362:35)\n    at executeFn (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\support\\index.js:692:22)\n    at Context.eval (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\support\\index.js:705:12)\n\nFrom Node.js Internals:\n  TypeError: Invalid URL: http://localhost:undefined\n  TypeError [ERR_INVALID_URL] [ERR_INVALID_URL]: Invalid URL: http://localhost:undefined\n      at onParseError (internal/url.js:259:9)\n      at new URL (internal/url.js:335:5)\n      at new URL (internal/url.js:332:22)\n      at getWSEndpoint (C:\\Users\\guest1\\@shoon\\compound\\cucumber-demo\\node_modules\\puppeteer\\lib\\cjs\\puppeteer\\common\\BrowserConnector.js:79:25)\n      at Object.connectToBrowser (C:\\Users\\guest1\\@shoon\\compound\\cucumber-demo\\node_modules\\puppeteer\\lib\\cjs\\puppeteer\\common\\BrowserConnector.js:69:37)\n      at PuppeteerNode.connect (C:\\Users\\guest1\\@shoon\\compound\\cucumber-demo\\node_modules\\puppeteer\\lib\\cjs\\puppeteer\\common\\Puppeteer.js:50:38)\n      at PuppeteerNode.connect (C:\\Users\\guest1\\@shoon\\compound\\cucumber-demo\\node_modules\\puppeteer\\lib\\cjs\\puppeteer\\node\\Puppeteer.js:83:22)\n      at unlockPlugin (C:\\Users\\guest1\\@shoon\\compound\\cucumber-demo\\cypress\\plugins\\index.js:53:29)\n      at unlockWallet (C:\\Users\\guest1\\@shoon\\compound\\cucumber-demo\\cypress\\plugins\\index.js:106:20)\n      at invoke (C:\\Users\\guest1\\AppData\\Local\\Cypress\\Cache\\7.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\plugins\\child\\task.js:47:14)\n      at C:\\Users\\guest1\\AppData\\Local\\Cypress\\Cache\\7.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\plugins\\util.js:45:14\n      at tryCatcher (C:\\Users\\guest1\\AppData\\Local\\Cypress\\Cache\\7.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n      at Function.Promise.attempt.Promise.try (C:\\Users\\guest1\\AppData\\Local\\Cypress\\Cache\\7.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\method.js:39:29)\n      at Object.wrapChildPromise (C:\\Users\\guest1\\AppData\\Local\\Cypress\\Cache\\7.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\plugins\\util.js:44:23)\n      at Object.wrap (C:\\Users\\guest1\\AppData\\Local\\Cypress\\Cache\\7.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\plugins\\child\\task.js:53:8)\n      at execute (C:\\Users\\guest1\\AppData\\Local\\Cypress\\Cache\\7.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\plugins\\child\\run_plugins.js:127:19)\n      at EventEmitter.<anonymous> (C:\\Users\\guest1\\AppData\\Local\\Cypress\\Cache\\7.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\plugins\\child\\run_plugins.js:202:5)\n      at EventEmitter.emit (events.js:315:20)\n      at process.<anonymous> (C:\\Users\\guest1\\AppData\\Local\\Cypress\\Cache\\7.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\plugins\\util.js:19:22)\n      at process.emit (events.js:315:20)\n      at emit (internal/child_process.js:903:12)\n      at processTicksAndRejections (internal/process/task_queues.js:81:21)\n  "
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on \"MetaMask\" name",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I see part of token in header",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "\"unfederalreserve\";supply",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Supply",
+        "tags": [
+          {
+            "name": "@e2e-feature",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click on user borrow market",
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.home__markets`, but never found it.\n    at HomeMarketsFragment.wrap (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\integration\\borrow.feature:182:17)\n    at HomeMarketsFragment.eval [as userMarket] (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\integration\\borrow.feature:490:20)\n    at HomeMarketsFragment.eval [as borrowUserMarket] (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\integration\\borrow.feature:487:20)\n    at Context.eval (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\integration\\borrow.feature:136:15)\n    at Context.resolveAndRunStepDefinition (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\integration\\borrow.feature:11019:9)\n    at Context.eval (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\integration\\borrow.feature:10362:35)\n    at executeFn (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\support\\index.js:692:22)\n    at Context.eval (https://ledger-stage.unfederalreservetesting.com/__cypress/tests?p=cypress\\support\\index.js:705:12)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I see base modal",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I type \"0.1\" in base modal",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I submit a value by click on \"Borrow\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I see base modal with title \"Confirm Transaction\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I confirm transaction",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

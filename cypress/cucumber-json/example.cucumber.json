@@ -1,0 +1,167 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "\"UnFederalReserve\"",
+    "line": 2,
+    "id": "\"unfederalreserve\"",
+    "tags": [
+      {
+        "name": "@e2e-feature",
+        "line": 1
+      }
+    ],
+    "uri": "example.feature",
+    "elements": [
+      {
+        "id": "\"unfederalreserve\";configure-metamask",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Configure MetaMask",
+        "tags": [
+          {
+            "name": "@e2e-feature",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on home page",
+            "result": {
+              "status": "passed",
+              "duration": 13265000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I see wallet name \"MetaMask\" in modal",
+            "result": {
+              "status": "passed",
+              "duration": 74000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I see wallet description is \"Connect to your MetaMask Wallet\"",
+            "result": {
+              "status": "passed",
+              "duration": 76000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I unlock my wallet plugin",
+            "result": {
+              "status": "passed",
+              "duration": 1607000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on \"MetaMask\" name",
+            "result": {
+              "status": "passed",
+              "duration": 10225000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I see part of token in header",
+            "result": {
+              "status": "passed",
+              "duration": 81000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "\"unfederalreserve\";borrow",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Borrow",
+        "tags": [
+          {
+            "name": "@e2e-feature",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I click on user borrow market",
+            "result": {
+              "status": "passed",
+              "duration": 2434000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I see base modal",
+            "result": {
+              "status": "passed",
+              "duration": 151000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I type \"0.1\" in base modal",
+            "result": {
+              "status": "passed",
+              "duration": 249000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I submit a value by click on \"Borrow\"",
+            "result": {
+              "status": "passed",
+              "duration": 5186000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I see base modal with title \"Confirm Transaction\"",
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I confirm transaction",
+            "result": {
+              "status": "passed",
+              "duration": 11655000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
