@@ -3,7 +3,7 @@
 A simple example about how cucumber with cypress works
 
 ---
-## Create config file
+## Configuration
 
 Create file `cypress.env.json` with content:
 
